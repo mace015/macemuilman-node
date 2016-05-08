@@ -1,4 +1,3 @@
-var port 			= 8080;
 var express 		= require('express');
 var nunjucks 		= require('nunjucks');
 var bodyParser 		= require('body-parser');
@@ -9,6 +8,8 @@ var email			= require('emailjs');
 var app 			= express();
 
 require('dotenv').config();
+
+var port = process.env.APP_PORT;
 
 var mailer = email.server.connect({
 	user: 		process.env.MAIL_USER,
