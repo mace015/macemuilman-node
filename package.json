@@ -4,6 +4,7 @@
   "description": "Macemuilman.nl redone in Node.js",
   "main": "server.js",
   "dependencies": {
+    "app-root-path": "^1.0.0",
     "body-parser": "^1.15.1",
     "connect-flash": "^0.1.1",
     "cookie-session": "^2.0.0-alpha.1",
